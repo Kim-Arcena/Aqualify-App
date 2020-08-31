@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/background_splashscreen</item>
+    <item name="colorPrimary">@color/white</item>
+    <item name="colorPrimaryDark">@color/white</item>
+    <item name="colorAccent">@color/white</item>
+</style>
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">#008577</item>
+        <item name="android:textColor">#AC0022</item>
+        <item name="android:textColorPrimary">#008577</item>
+    </style>
+</resources>

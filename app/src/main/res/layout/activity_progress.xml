@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FDFDFD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProgressActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:visibility="visible"
+            android:layout_width="48dp"
+            android:layout_marginTop="22dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/mainimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.362"/>
+
+        <ImageView
+            android:id="@+id/plank"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@color/white"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/stalactites"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/stalactites"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageView
+            android:id="@+id/decoy"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:foregroundTint="#AAA"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_menu_vector"
+            app:layout_constraintBottom_toTopOf="@+id/mainimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="22dp"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.266"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="30dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/robotoblack"
+                android:text="My progress."
+
+                android:textSize="42sp"/>
+            <TextView
+                android:id="@+id/subtitle"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/robotolight"
+                android:text="shows how much time you're \nbeing productive."
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDelProgress"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/btnminusbkg"
+            android:fontFamily="@font/robotomedium"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="38sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/progressRecyclv"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

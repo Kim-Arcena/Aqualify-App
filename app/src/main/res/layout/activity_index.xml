@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Index">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:visibility="visible"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/mainimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362"/>
+
+    <ImageView
+        android:id="@+id/plank"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/stalactites"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/stalactites"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/decoy"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:foregroundTint="#AAA"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_menu_vector"
+        app:layout_constraintBottom_toTopOf="@+id/mainimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <ImageView
+            android:id="@+id/mainimage"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/bkgaquarium"
+            app:layout_constraintBottom_toTopOf="@+id/timer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noirprolight"
+            android:gravity="center"
+            android:text="0:00"
+            android:textColor="#11a7bd"
+            android:textSize="90sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.538" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/noirprolight"
+            android:foregroundGravity="center"
+            android:text="You have to stay focused \nfor atleast 30 mins today!"
+            android:textColor="#11a7bd"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.626" />
+
+        <Button
+            android:id="@+id/buttonG"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_button_white"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/robotocondensed"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="START NOW"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.103" />
+
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/bkgbutton"
+            android:layout_width="195dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_button_white"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/robotocondensed"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="START NOW"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            app:buttonColor="#fff"
+            app:glowColor="#73D9FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.103" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/seagrass"
+            android:scaleType="fitXY"
+            android:layout_width="1200dp"
+            android:layout_height="450dp"
+            android:layout_margin="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="1.43"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/seagrasmf"
+            app:lottie_enableMergePathsForKitKatAndAbove="true"/>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/oceanbkg"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="400dp"
+            android:layout_margin="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.05"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/oceanbkg"
+            app:lottie_enableMergePathsForKitKatAndAbove="true"/>
+
+        <SeekBar
+            android:outlineSpotShadowColor="#000"
+            android:id="@+id/seekBarGauge"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.663" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

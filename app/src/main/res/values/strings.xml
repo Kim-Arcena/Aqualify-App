@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Aqualify</string>
+    <string name="menu_vector_path" translatable="false">M20 30,L80 30,M20 50,L65 50,M20 70,L75 70</string>
+    <string name="back_vector_path" translatable="false">M50 25,L80 50,M20 50,L80 50,M50 75,L80 50</string>
+
+    <string name="title1">Welcome</string>
+    <string name="title2">Be Productive</string>
+    <string name="title3">Avoid DIstractions</string>
+    <string name="title4">Control Your Time</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
+
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

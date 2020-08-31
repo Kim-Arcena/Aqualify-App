@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "740646229001",
+    "firebase_url": "https://aqualify-361f1.firebaseio.com",
+    "project_id": "aqualify-361f1",
+    "storage_bucket": "aqualify-361f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740646229001:android:db7dee186f3ea296bcd4d8",
+        "android_client_info": {
+          "package_name": "com.sticollegeiloilo.aqualify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740646229001-f6nfd3hit0ga0grfrjhrtnhn5gs9k2ic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sticollegeiloilo.aqualify",
+            "certificate_hash": "8049fd28a5a8d216874fdd28ea7581930d288241"
+          }
+        },
+        {
+          "client_id": "740646229001-a5da0b8kjitl9ohe8s2m84fvqgr0g2m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoMiHVNa39h2rGaISVWq_IZc_KrWIo5x4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740646229001-a5da0b8kjitl9ohe8s2m84fvqgr0g2m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

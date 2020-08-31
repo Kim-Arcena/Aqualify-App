@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    android:orientation="vertical"
+    android:paddingBottom="32dp"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/stalactites"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/stalactites"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_undraw_productivity" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Memo"
+            android:fontFamily="@font/robotocondensed"
+            android:textSize="26sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="16dp"
+            android:fontFamily="@font/robotocondensed"
+
+            android:text="The app features memo. It allows the users to organize the things they must accomplish.It helps them to stay on track with their work. It serves as their reminder, help them stay focus and get everything done within a specific time."
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/slideTwoBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_weight="1"
+                android:text="@string/back"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/slideTwoNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:gravity="bottom|end"
+                android:layout_weight="1"
+                android:text="@string/next"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

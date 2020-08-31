@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context=".menu_drawer">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lot1"
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_enableMergePathsForKitKatAndAbove="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/ymm" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/robotothin"
+                android:text="W E L C O M E   B A C K"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/usernamedisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/robotoboldcondensed"
+                android:text="USERNAME"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="26sp" />
+            <LinearLayout
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_account_balance_black_24dp" />
+
+                <TextView
+                    android:id="@+id/patience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/robotoboldcondensed"
+                    android:text="PATIENCE: 0"
+                    android:textAllCaps="true"
+                    android:textColor="#FFA341"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/homet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/bahnschrift"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="AQUARIUM"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/memoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/bahnschrift"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="MEMO"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/progressBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/bahnschrift"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="PROGRESS"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/aboutBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/bahnschrift"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="ABOUT THE APP"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.94">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="125dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_philosopher" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/LevelTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/robotoboldcondensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="LEVEL :"
+                        android:textColor="#FFA341"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/levelname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/robotoboldcondensed"
+                        android:text="ARISTOTLE"
+                        android:textAllCaps="true"
+                        android:textColor="#FFA341"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/logoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="120dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/robotobold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="LOG OUT"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

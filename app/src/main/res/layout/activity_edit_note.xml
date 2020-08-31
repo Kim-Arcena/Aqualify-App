@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FDFDFD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditNote">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:visibility="visible"
+                android:layout_width="48dp"
+                android:layout_marginTop="22dp"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toTopOf="@+id/mainimage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.362"/>
+
+            <ImageView
+                android:id="@+id/plank"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@color/white"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/stalactites"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/stalactites"
+                tools:ignore="MissingConstraints" />
+
+
+            <ImageView
+                android:id="@+id/decoy"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:foregroundTint="#AAA"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_menu_vector"
+                app:layout_constraintBottom_toTopOf="@+id/mainimage"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="22dp"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.266" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-25dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/robotocondensed"
+            android:text="EDIT NOTE"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dp"
+        android:elevation="4dp"
+        android:background="@drawable/itemradialplank"
+        android:orientation="vertical"
+        android:paddingBottom="22dp">
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addtitle"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Title"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/addTitleNoteNew"
+                android:inputType="text"
+                android:background="@drawable/radialplankdarker"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Click here to add Title."
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adddesc"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Content"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/addcontenmt"
+                android:inputType="textMultiLine"
+                android:background="@drawable/radialplankdarker"
+                android:textColorHint="#B5B5B5"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Write your content here."
+                android:gravity="start"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/adddate"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Deadline"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/addNoteDeadlineNew"
+                android:inputType="text"
+                android:background="@drawable/radialplankdarker"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Click here to add deadline."
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpdateTask"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="@drawable/colorpulradialplank"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/btnDelTask"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Delete"
+        android:textColor="#AFAFAF"
+        android:textAllCaps="false"
+        android:background="@drawable/dullradialplank"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+
+</LinearLayout>
