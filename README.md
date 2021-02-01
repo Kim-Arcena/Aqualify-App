@@ -1,2 +1,1 @@
-# Aqualify-App
-This is our mobile application project. This is a productivity app has a focus timer and notes. The longer the users stay focus(by not touching their phones), the cleaner the ocean.
+It is a mobile appllication (complemented with a web application) that helps the users to become more focused and be less distracted by their mobile devices. With the use of gamification and the Pomodoro technique, they must avoid touching their phones in order to keep their virtual aquarium clean. 
