@@ -105,11 +105,15 @@
   <!-- DEVELOPERS -->
   <h2>Developers</h2>
   <ul>
-      <li>Senior Developer (Full Stack Android) - Nico Guarnes </li>
+      <li>Senior Developer (Full Stack Android) - <a href="https://github.com/Nikkolas-Cage">Nico Guarnes</a> </li>
       <li>Junior Developer (Back End Android) - Kimberly Arceña </li>
-      <li>Debuggers
-        <ol></ol>
-      </li>
+      <li>Software Tester</li>
+      <ol>
+        <li>Aldrin Esquierdo</li>
+        <li>Mark Daniel Caingles</li>
+        <li>Ervin Papa</li>
+        <li>Andrea Maxine Gonzaga</li>
+      </ol>
     </ul>
 </div>
 
