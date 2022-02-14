@@ -27,6 +27,7 @@
   <h3>Overview:</h3>
 
   <ul>
+    <li>Securely save user data in the cloud with Firebase Authentication (with email verification during sign up).</li>
     <li>The application uses the Pomodoro technique combined with gamification.</li>
     <li>Embedded with Patience Level wherein minutes are converted into patience points. Levels succession corresponds to a specific philosopher.</li>
     <li>The app simulates a marine aquarium wherein the health of it is based on the time spent by the users away from their phone.</li>
