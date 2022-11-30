@@ -1,10 +1,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="assets/icon.png" alt="Logo" width="80" height="80">
   </a>
-
+  
   <h3 align="center">Aqualify</h3>
 
   <p align="center">
@@ -21,6 +22,7 @@
 <div>
   <!-- ABOUT THE PROJECT -->
   <h2>About the Project</h2>
+    <img src="https://user-images.githubusercontent.com/70198061/204768893-e3e2823c-e719-4e0f-a46f-bdb0f630fbc9.png" alt="banner designed by Nico">
 
   <p>Aqualify, a multi-platform app. It is a productive and anti-procrastination app wherein it helps the users to change their gadget habits for the better and in a fun ingenious way. It’s a well-designed app that helps make the abstract idea of focusing away from your phone into a fun game It’s helpful for people who need extra help in order to sustain attention on their task and create a more balanced life. It features a Pomodoro focus timer - a personal preserve aquarium wherein the user must sustain a healthy marine environment. The condition of the marine preserve would correspond to the focus period of the user without using his/her device. The more focus the user, the healthier and cleaner the virtual marine biosphere.  .</p>
 
